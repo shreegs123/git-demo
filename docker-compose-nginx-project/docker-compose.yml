@@ -1,0 +1,12 @@
+version: '3'
+services:
+  myappcont:
+    image: myappimg
+    ports:
+      - '8000:80'
+    volumes:
+      - nginx_db:/var/opt/nginx
+
+
+volumes:
+    nginx_db:
